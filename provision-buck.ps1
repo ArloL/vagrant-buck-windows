@@ -1,3 +1,5 @@
+$ErrorActionPreference = "Stop"
+
 md C:\opt -Force
 
 if (Test-Path C:\opt\buck) {

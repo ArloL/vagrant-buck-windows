@@ -1,3 +1,4 @@
+$ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -parent $MyInvocation.MyCommand.Path
 
 $git_architecture = "64"

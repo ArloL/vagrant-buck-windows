@@ -1,3 +1,4 @@
+$ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -parent $MyInvocation.MyCommand.Path
 
 $python_architecture = ".amd64"

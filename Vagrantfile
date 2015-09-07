@@ -10,6 +10,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "shell", inline: <<-SHELL
+    $ErrorActionPreference = "Stop"
     cd C:\\vagrant
     .\\provision-timezone.bat
     .\\provision-screensaver.bat
