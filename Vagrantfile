@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
     .\\provision-ant.ps1
     .\\provision-python.ps1
     .\\provision-git.ps1
-    .\\provision-buck.ps1
   SHELL
+  config.vm.provision "shell", inline: "powershell -File C:\\vagrant\\provision-buck.ps1"
 
 end
