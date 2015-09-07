@@ -1,3 +1,5 @@
+md C:\opt -Force
+
 if (Test-Path C:\opt\buck) {
     cd C:\opt\buck
     git pull
