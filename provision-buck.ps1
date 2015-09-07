@@ -4,7 +4,7 @@ if (Test-Path C:\opt\buck) {
     cd C:\opt\buck
     git pull
 } else {
-    git clone https://github.com/facebook/buck.git C:\opt/buck
+    git clone https://github.com/facebook/buck.git C:\opt\buck
     cd C:\opt\buck
 }
 ant
