@@ -7,7 +7,7 @@ if ([IntPtr]::size -eq 4) {
 }
 
 if (!(Test-Path "C:\Program Files\Java\jdk1.8.0_60")) {
-    Start-Process -FilePath "$($scriptDir)\jdk-8u60-windows-$($java_architecture).exe" -ArgumentList "/s","ADDLOCAL=\"ToolsFeature\"" -Wait -Passthru
+    Start-Process -FilePath "$($scriptDir)\jdk-8u60-windows-$($java_architecture).exe" -ArgumentList "/s","ADDLOCAL=`"ToolsFeature`"" -Wait -Passthru
 }
 
 [Environment]::SetEnvironmentVariable("JAVA_HOME", "C:\Program Files\Java\jdk1.8.0_60", "Machine")
